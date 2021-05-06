@@ -13,7 +13,7 @@ broker.on('published', (packet)=>{
     message = packet.payload.toString()
     console.log(message)
     mongc.connect(url, (error, client)=>{
-    var myCol = client.db('IoTDB').collection('messages'); // DB name and collection name
+    var myCol = client.db('IoT').collection('messages'); // DB name and collection name
     myCol.insertOne({
     message: message
     }, ()=>{
