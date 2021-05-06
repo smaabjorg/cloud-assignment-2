@@ -5,6 +5,9 @@ First run node broker.js in one terminal, then node sub.js in number 2, then run
 This will start sending data through the system, and the data will be stored in our DB
 for later potential use. 
 
+You are free to use your own DB, just switch the link in broker.js/line 7. You also need to change database name and collection name on line 16.
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     If you get an validation error while working on MQTT comment out '\node_modules\jsonschema\lib\validator.js'
     line number 109-111'. 
