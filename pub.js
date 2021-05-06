@@ -4,7 +4,6 @@ var json2xml = require('json2xml');
 
 // The data we are sending
 
-
 var data =
 {
     "Data":
@@ -49,10 +48,13 @@ var data =
 
 var topic = 'Smart Home';
 
+// This gets a random number to present in our sensors. 
+
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+// Transforms our data from JSON to XML. 
 
 var message = json2xml(data);
 client.on('connect', () => {
